@@ -1,0 +1,55 @@
+@media (min-width: 500px) and (max-width: 900px) {
+    .sign {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    body {
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .sign {
+        flex-direction: column-reverse;
+        border-radius: 0px;
+    }
+
+    .thanks br {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sign {
+        flex-direction: column-reverse;
+        border-radius: 0px;
+        padding: 20rem 1.875rem 1.875rem;
+        position: relative;
+        width: 100%;
+    }
+
+    .sign .image {
+        position: absolute;
+        top: 0;
+    }
+
+    .thanks {
+        position: absolute;
+        height: 100%;
+        border-radius: 0px;
+        justify-content: center;
+    }
+
+    .thanks br {
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Newsletter Sign Up - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <main>
+        <section class="sign selecionado">
+            <section class="intro">
+                <h1>Stay updated!</h1>
+                <p class="subtitle">Join 60,000+ product managers receiving monthly <br> updates on:</p>
+                <ul>
+                    <li>
+                        <img src="./src/images/icon-list.svg" alt="icon-list">
+                        <p>Product discovery and building what matters</p>
+                    </li>
+                    <li>
+                        <img src="./src/images/icon-list.svg" alt="icon-list">
+                        <p>Measuring to ensure updates are a success</p>
+                    </li>
+                    <li>
+                        <img src="./src/images/icon-list.svg" alt="icon-list">
+                        <p>And much more!</p>
+                    </li>
+                </ul>
+                <form>
+                    <div class="label-form">
+                        <label for="email">Email address</label>
+                        <p class="error"></p>
+                    </div>
+                    <input type="email" name="email" required id="email" placeholder="email@company.com">
+                    <input type="submit" id="sign-submit" value="Subscribe to monthly newsletter">
+                </form>
+            </section>
+            <picture class="image">
+                <source srcset="./src/images/illustration-sign-up-desktop.svg" media="(min-width:1000px)">
+                <img src="./src/images/illustration-sign-up-mobile.svg" aria-hidden="true">
+            </picture>
+        </section>
+        <section class="thanks">
+            <img src="./src/images/icon-success.svg" alt="icon-success">
+            <h1>Thanks for <br> subscribing!</h1>
+            <p>A confirmation email has been sent to <br> <span class="email-value"></span>. Please open it and click <br> the button inside to confirm your subscription.</p>
+            <button class="btn-thanks">Dismiss message</button>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
