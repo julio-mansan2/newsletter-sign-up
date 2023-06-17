@@ -11,11 +11,13 @@ inputSubmit.addEventListener('click', function() {
     event.preventDefault()
     if (inputEmail.validity.valid === false || inputEmail.value === '') {
         error.innerHTML = 'Insert a valid email'
-        inputEmail.style.border = '2px solid hsl(4, 100%, 67%)'
+        inputEmail.style.border = '2px solid var(--tomato)'
     } else {
         signPage.classList.remove('selecionado')
         thanksPage.classList.add('selecionado')
         emailValue.innerHTML = inputEmail.value
+        error.innerHTML = ''
+        inputEmail.style.border = '2px solid var(--grey)'
     }
 })
 
